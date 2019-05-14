@@ -1,12 +1,300 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет-магазин гаджетов «Девайс»</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+  <a href="/" class="logo-link">
+  <img src="#" alt="Device" class="logo-img" width="163" height="35">
+</a>
+  <div>
+    <label>
+      <input type="text" name="search-query" id="search-query" placeholder="Поиск по сайту">
+    </label>
+    <ul class="user-nav">
+  
+    <li><a href="#" class="login">Войти</a></li>
+  
+  <li><a href="#" class="compare">Сравнить</a></li>
+  <li><a href="#" class="cart">Корзина</a></li>
+</ul>
+  </div>
+  <nav>
+    <a href="catalog" class="nav-link">Каталог товаров</a>
+    <ul>
+  <li><a href="#" class="nav-link">Доставка</a></li>
+  <li><a href="#" class="nav-link">Гарантия</a></li>
+  <li><a href="#" class="nav-link">Контакты</a></li>
+</ul>
+  </nav>
+</header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
+    <section class="featured-goods">
+      <input type="radio" name="featured-goods-radio" id="featured-goods-radio-1" checked>
+      <input type="radio" name="featured-goods-radio" id="featured-goods-radio-2">
+      <input type="radio" name="featured-goods-radio" id="featured-goods-radio-3">
+      <section class="featured-goods-section-1">
+        <img src="#" alt="Самая длинная палка для селфи">
+        <b class="slide-number">
+          01
+        </b>
+        <b class="slogan">
+          Делай селфи,<br>
+          как Бен Стиллер!
+        </b>
+        <p class="description">
+          Самая длинная палка для селфи доступна в нашем магазине.<br>
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+        </p>
+        <a href="#" class="btn">Подробнее</a>
+        <table>
+          <tr>
+            <td>8,5 м</td>
+            <td>5 кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr>
+            <th>Длина палки</th>
+            <th>Вес палки</th>
+            <th>Материал</th>
+          </tr>
+        </table>
+      </section>
+      <section class="featured-goods-section-2">
+        <img src="#" alt="Мотивирующие фитнес-браслеты">
+        <b class="slide-number">
+          02
+        </b>
+        <b class="slogan">
+          Худеем<br>
+          правильно!
+        </b>
+        <p class="description">
+          Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+          не пропускать занятия и соблюдать диету.
+        </p>
+        <a href="#" class="btn">Подробнее</a>
+        <table>
+          <tr>
+            <td>48 часов</td>
+          </tr>
+          <tr>
+            <th>Без подзарядки</th>
+          </tr>
+        </table>
+      </section>
+      <section class="featured-goods-section-3">
+        <img src="#" alt="Квадрокоптер с лазером">
+        <b class="slide-number">
+          03
+        </b>
+        <b class="slogan">
+          Порхает как бабочка,<br>
+          жалит как пчела!
+        </b>
+        <p class="description">
+          Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+          мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <a href="#" class="btn">Подробнее</a>
+        <table>
+          <tr>
+            <td>800 м</td>
+            <td>50 м</td>
+          </tr>
+          <tr>
+            <th>Дальность полета</th>
+            <th>Радиус поражения</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section class="featured-categories">
+      <ul class="featured-categories-list">
+        <li>
+          <a href="#" class="featured-categorie-img-link vr">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="#" class="featured-categorie-img-link selfie-stick">Моноподы<br>для селфи</a>
+        </li>
+        <li>
+          <a href="#" class="featured-categorie-img-link action-camera">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="#" class="featured-categorie-img-link fitness-tracker">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#" class="featured-categorie-img-link smart-watch">Умные часы</a>
+        </li>
+        <li>
+          <a href="#" class="featured-categorie-img-link quadcopter">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </section>
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <label>
+        Доставка
+        <input class="visually-hidden" type="radio" name="services-switch" id="" checked>
+      </label>
+      <label>
+        Гарантия
+        <input class="visually-hidden" type="radio" name="services-switch" id="">
+      </label>
+      <label>
+        Кредит
+        <input class="visually-hidden" type="radio" name="services-switch" id="">
+      </label>
+      <section>
+        <h3>Доставка</h3>
+        <p>
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+      </section>
+      <section>
+        <h3>Гарантия</h3>
+        <p>
+          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+          Товар, не дом, конечно же.
+        </p>
+      </section>
+      <section>
+        <h3>Кредит</h3>
+        <p>
+          Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+          условия кредита. Выгодные для нашего банка, разумеется.
+        </p>
+      </section>
+    </section>
+    <section class="partners">
+      <h2 class="visually-hidden">Наши партнёры</h2>
+      <ul>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+      </ul>
+    </section>
+    <div class="info-n-contacts">
+      <section class="info">
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn">Подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <img src="#" alt="Карта" class="contacts-map">
+        <a href="#" class="btn">Напишите нам</a>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+  <a href="/" class="logo-link">
+  <img src="#" alt="Device" class="logo-img" width="163" height="35">
+</a>
+  <ul class="user-nav">
+  
+    <li><a href="#" class="login">Войти</a></li>
+  
+  <li><a href="#" class="compare">Сравнить</a></li>
+  <li><a href="#" class="cart">Корзина</a></li>
+</ul>
+  <span class="address">г. Москва, ул. Строителей, 15</span>
+  <ul>
+  <li><a href="#" class="nav-link">Доставка</a></li>
+  <li><a href="#" class="nav-link">Гарантия</a></li>
+  <li><a href="#" class="nav-link">Контакты</a></li>
+</ul>
+  <span class="phone">Тел.: +7 (495) 495-95-95</span>
+  <div class="yellow-line"></div>
+  <ul class="social-buttons">
+    <li class="social-btn facebook">facebook</li>
+    <li class="social-btn instagram">instagram</li>
+    <li class="social-btn twitter">twitter</li>
+  </ul>
+  <a href="//htmlacademy.ru" class="htmlacademy-link">htmlacademy.ru<img src="img/htmlacademy-logo.svg" alt=""></a>
+</footer>
+  <!-- Форма обратной связи
+  write us > Отправить
+  ---
+  
+  Отправить
+  
+  ---
+  write us > В свободной форме
+  ---
+  
+  В свободной форме
+  
+  ---
+  write us > Ваше имя:
+  ---
+  
+  Ваше имя:
+  
+  ---
+  write us > email@example.com
+  ---
+  
+  email@example.com
+  
+  ---
+  write us > Имя Фамилия
+  ---
+  
+  Имя Фамилия
+  
+  ---
+  write us > Ваш e-mail:
+  ---
+  
+  Ваш e-mail:
+  
+  ---
+  write us > Текст письма:
+  ---
+  
+  Текст письма: -->
+  <!-- catalog menu
+  catalog menu > Квадрокоптеры
+  ---
+  
+  Квадрокоптеры
+  
+  ---
+  catalog menu > Фитнес-браслеты Умные часы 
+  ---
+  
+  Фитнес-браслеты
+  Умные часы
+  
+  
+  ---
+  catalog menu > Виртуальная реальность Моноподы для селфи Экшн-камеры 
+  ---
+  
+  Виртуальная реальность
+  Моноподы для селфи
+  Экшн-камеры -->
+   
+</body>
+
 </html>
