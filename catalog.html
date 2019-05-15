@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
+  <link rel="stylesheet" href="css/multirange.css">
 </head>
 
 <body>
@@ -50,6 +51,9 @@
         </header>
         <fieldset>
           <legend>Стоимость</legend>
+          <input type="range" multiple value="0,60" />
+          <span class="price-min">от 0</span>
+          <span class="price-max">до 5000</span>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -131,6 +135,7 @@
   </ul>
   <a href="//htmlacademy.ru" class="htmlacademy-link">htmlacademy.ru<img src="img/htmlacademy-logo.svg" alt=""></a>
 </footer>
+  <script src="js/multirange.js"></script>
 </body>
 
 </html>
