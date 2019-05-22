@@ -84,17 +84,12 @@
       <div class="goods">
         <header class="sorting">
           <h2>Сортировка:</h2>
-          <input class="visually-hidden" type="radio" name="sort-by" id="sort-by-price" checked>
-          <input class="visually-hidden" type="radio" name="sort-by" id="sort-by-type">
-          <input class="visually-hidden" type="radio" name="sort-by" id="sort-by-popularity">
-          <label for="sort-by-price">По цене</label>
-          <label for="sort-by-type">По типу</label>
-          <label for="sort-by-popularity">По популярности</label>
+          <a class="current" href="?sort=price&order=asc" for="sort-by-price">По цене</a>
+          <a href="?sort=type&order=asc" for="sort-by-type">По типу</a>
+          <a href="?sort=popularity&order=desc" for="sort-by-popularity">По популярности</a>
 
-          <input class="visually-hidden" type="radio" name="sort-order" id="sort-order-asc">
-          <input class="visually-hidden" type="radio" name="sort-order" id="sort-order-desc" checked>
-          <label for="sort-order-asc">По возрастанию</label>
-          <label for="sort-order-desc">По убыванию</label>
+          <a class="sort-order-asc" href="?sort=price&order=asc">По возрастанию</a>
+          <a class="sort-order-desc">По убыванию</a>
         </header>
         <ul class="goods-container">
           <li class="good">
