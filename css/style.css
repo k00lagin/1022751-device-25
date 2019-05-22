@@ -1,0 +1,11 @@
+.contacts-map {
+    position:relative;
+}
+.contacts-map-frame {
+    width:560px;
+    border:0;
+}
+.contacts-map-img {
+    position: absolute;
+    left: 0;
+}
