@@ -56,31 +56,31 @@
       </ul>
     </header>
     <section class="catalog">
-      <div class="filters">
+      <form class="filters" action="//echo.htmlacademy.ru" method="GET">
         <header class="filters-header">
           <h2>Фильтр:</h2>
         </header>
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" multiple value="0,60" />
+          <input type="range" name="price" multiple value="0,60" />
           <span class="price-min">от 0</span>
           <span class="price-max">до 5000</span>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
-          <label for="color-black"><input type="checkbox" name="color" id="color-black" checked>Чёрный</label>
-          <label for="color-white"><input type="checkbox" name="color" id="color-white">Белый</label>
-          <label for="color-blue"><input type="checkbox" name="color" id="color-blue" checked>Синий</label>
-          <label for="color-red"><input type="checkbox" name="color" id="color-red" checked>Красный</label>
-          <label for="color-pink"><input type="checkbox" name="color" id="color-pink">Розовый</label>
+          <label for="color-black"><input type="checkbox" name="color-black" id="color-black" checked>Чёрный</label>
+          <label for="color-white"><input type="checkbox" name="color-white" id="color-white">Белый</label>
+          <label for="color-blue"><input type="checkbox" name="color-blue" id="color-blue" checked>Синий</label>
+          <label for="color-red"><input type="checkbox" name="color-red" id="color-red" checked>Красный</label>
+          <label for="color-pink"><input type="checkbox" name="color-pink" id="color-pink">Розовый</label>
         </fieldset>
         <fieldset>
           <legend>Bluetooth</legend>
           <label for="bluetooth-1"><input type="radio" name="bluetooth" id="bluetooth-1" checked>Есть</label>
           <label for="bluetooth-0"><input type="radio" name="bluetooth" id="bluetooth-0">Нет</label>
         </fieldset>
-        <button>Показать</button>
-      </div>
+        <button type="submit">Показать</button>
+      </form>
       <div class="goods">
         <header class="sorting">
           <h2>Сортировка:</h2>
