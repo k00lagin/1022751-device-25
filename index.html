@@ -25,13 +25,19 @@
     </form>
     <ul class="user-nav">
   
-    <li><a href="#" class="login">Войти</a></li>
+    <li class="nav-item-login">
+      <a href="#" class="login">Войти</a>
+    </li>
   
-  <li><a href="#" class="compare">Сравнить</a></li>
-  <li><a href="#" class="cart">Корзина</a></li>
+  <li class="nav-item-compare">
+    <a href="#" class="compare">Сравнить</a>
+  </li>
+  <li class="nav-item-cart">
+    <a href="#" class="cart">Корзина</a>
+  </li>
 </ul>
   </div>
-  <nav>
+  <nav class="catalog-n-site-nav">
     <a href="/catalog" class="nav-link catalog">Каталог товаров</a>
     <ul class="site-nav">
   <li><a href="#" class="nav-link">Доставка</a></li>
@@ -203,12 +209,12 @@
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="transport-companies">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="btn">Подробнее о нас</a>
+        <a href="#" class="yellow-stripe-button">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
@@ -230,10 +236,16 @@
 </a>
   <ul class="user-nav">
   
-    <li><a href="#" class="login">Войти</a></li>
+    <li class="nav-item-login">
+      <a href="#" class="login">Войти</a>
+    </li>
   
-  <li><a href="#" class="compare">Сравнить</a></li>
-  <li><a href="#" class="cart">Корзина</a></li>
+  <li class="nav-item-compare">
+    <a href="#" class="compare">Сравнить</a>
+  </li>
+  <li class="nav-item-cart">
+    <a href="#" class="cart">Корзина</a>
+  </li>
 </ul>
   <address>г. Москва, ул. Строителей, 15</address>
   <ul class="site-nav">
@@ -268,7 +280,7 @@
         Текст письма:
         <textarea name="message" id="write-us-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </label>
-      <button class="write-us-submit" type="submit">Отправить</button>      
+      <button class="write-us-submit yellow-stripe-button" type="submit">Отправить</button>      
     </form>
     <button class="close-btn" type="button">Закрыть форму</button>
   </dialog>
