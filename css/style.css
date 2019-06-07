@@ -109,6 +109,289 @@ body {
 .yellow-stripe-button:focus {
   outline: none;
 }
+
+/*  */
+/* PAGE HEADER */
+/*  */
+.page-header {
+  position: relative;
+  color: #000;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: #f7e296;
+  width: 1160px;
+  min-height: 186px;
+  margin: 40px auto 0;
+  padding: 44px 60px 50px;
+  box-sizing: border-box;
+}
+
+.logo-link[href]:hover,
+.page-header .user-nav [href]:hover,
+.nav-link[href]:hover,
+.catalog-link[href]:hover {
+  opacity: .6;
+}
+
+.logo-link[href]:active,
+.user-nav [href]:active,
+.nav-link[href]:active,
+.catalog-link[href]:active {
+  opacity: .3;
+}
+
+.search-n-user {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+}
+
+form.search {
+  display: flex;
+  position: relative;
+}
+
+form.search [name=search-query] {
+  background: transparent url(/img/utility-icons/search.svg) 4px center no-repeat;
+  border: 0;
+  padding-left: 40px;
+  letter-spacing: -.5px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  height: 49px;
+  width: 441px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  line-height: 30px;
+  background-origin: border-box;
+  position: relative;
+  top: -10px;
+  left: -2px;
+}
+
+form.search [name=search-query],
+form.search [name=search-query]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+form.search [name=search-query]:hover,
+form.search [name=search-query]:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+form.search [name=search-query]:focus::placeholder,
+form.search:focus-within [name=search-query]::placeholder {
+  color: #000;
+}
+
+form.search button {
+  display: none;
+  position: absolute;
+  height: 100%;
+  top: -10px;
+  right: 0;
+  width: 85px;
+  background: transparent;
+  border: 0;
+}
+
+form.search [name=search-query]:focus,
+form.search:focus-within [name=search-query] {
+  border-bottom: 2px solid #000;
+  color: #000;
+  outline: none;
+}
+
+form.search [name=search-query]:focus+button,
+form.search:focus-within button,
+form.search button:hover,
+form.search button:focus,
+form.search button:active {
+  display: block;
+  border: 2px solid #000;
+}
+
+form.search button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+form.search button:active {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-header a {
+  color: #000;
+}
+
+.catalog-n-site-nav {
+  position: relative;
+  display: flex;
+  letter-spacing: 3.5px;
+}
+
+.page-header .nav-link.catalog,
+.page-header .site-nav .nav-link {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.page-header .site-nav>li:first-child {
+  margin-right: 35px;
+}
+
+.page-header .site-nav>li:last-child {
+  margin-left: auto;
+  position: relative;
+  right: -3px;
+}
+
+.nav-link.catalog {
+  position: relative;
+  top: 3px;
+}
+
+.nav-link.catalog::after {
+  position: absolute;
+  right: -28px;
+  top: 5px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  background: url(/img/utility-icons/plus.svg) center no-repeat;
+}
+
+.page-header .user-nav,
+.page-header .site-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 500px;
+}
+
+.user-nav li {
+  position: relative;
+}
+
+.user-nav a:not(.logout)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+.user-nav .login::before,
+.user-nav .user::before {
+  margin-right: 10px;
+  margin-top: 1px;
+  background: url(/img/utility-icons/user.svg) center no-repeat;
+}
+
+.user-nav .compare::before {
+  margin-right: 10px;
+  margin-top: 1px;
+  background: url(/img/utility-icons/compare.svg) center no-repeat;
+}
+
+.user-nav .cart::before {
+  margin-right: 12px;
+  margin-top: 1px;
+  background: url(/img/utility-icons/cart.svg) center no-repeat;
+}
+
+.page-header .logo-link {
+  position: absolute;
+  left: 60px;
+  top: -1em;
+}
+
+.page-header .nav-item-user {
+  margin-right: 20px;
+  letter-spacing: 0.2px;
+}
+
+.page-header .nav-item-logout,
+.page-header .nav-item-login {
+  margin-right: auto;
+}
+
+.nav-item-compare {
+  margin-right: 41px;
+}
+
+.page-header .catalog-categories {
+  display: flex;
+}
+
+.nav-link.catalog:not(:hover):not(:focus)+.catalog-categories:not(:hover):not(:focus-within) {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.catalog-categories {
+  align-content: start;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 30px 60px 20px;
+  position: absolute;
+  list-style: none;
+  background-color: #f7e296;
+  width: 1160px;
+  margin-top: -1px;
+  left: -60px;
+  height: 160px;
+  top: 30px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.catalog-categories li:nth-child(-n+5) {
+  width: 200px;
+}
+
+.catalog-categories li:nth-child(-n+3) {
+  width: 240px;
+}
+
+.catalog-categories li:nth-child(5) {
+  margin-bottom: 30px;
+}
+
+/*  */
+/* INDEX MAIN */
+/*  */
+.wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .featured-goods {
   position: relative;
   width: 1160px;
