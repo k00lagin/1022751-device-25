@@ -919,6 +919,95 @@ form.search button:active {
 .fixed-anchor.credit:target~.service-section.credit.no-js {
   display: block;
 }
+
+.info-n-contacts {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.info-n-contacts .yellow-stripe-button {
+  width: 260px;
+}
+
+.info-n-contacts h2 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.info {
+  margin-right: 40px;
+  width: 558px;
+}
+
+.info-n-contacts p {
+  line-height: 30px;
+  margin: 0;
+  letter-spacing: normal;
+}
+
+.info p {
+  max-width: 462px;
+  letter-spacing: -.71px;
+}
+
+.info p:first-of-type {
+  letter-spacing: -.45px;
+  margin-bottom: 30px;
+}
+
+.info p:last-of-type {
+  margin-bottom: 65px;
+}
+
+.transport-companies {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+}
+
+.transport-companies li {
+  padding-left: 35px;
+  position: relative;
+}
+
+.transport-companies li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.contacts {
+  width: 562px;
+}
+
+.contacts p {
+  letter-spacing: -.4px;
+  margin-bottom: 40px;
+}
+
+.contacts-map-link {
+  display: block;
+  margin-bottom: 65px;
+}
 .common-dialog {
   position: fixed;
   left: 50%;
