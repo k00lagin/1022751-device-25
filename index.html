@@ -58,27 +58,31 @@
     <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
     <section class="featured-goods">
       <h2 class="visually-hidden">Популярные товары — карусель</h2>
-      <input class="visually-hidden" type="radio" name="featured-goods-radio" id="featured-goods-radio-1" checked>
-      <input class="visually-hidden" type="radio" name="featured-goods-radio" id="featured-goods-radio-2">
-      <input class="visually-hidden" type="radio" name="featured-goods-radio" id="featured-goods-radio-3">
-      <label for="featured-goods-radio-1">Первый слайд — Делай селфи, как Бен Стиллер!</label>
-      <label for="featured-goods-radio-2">Второй слайд — Худеем правильно!</label>
-      <label for="featured-goods-radio-3">Третий слайд — Порхает как бабочка, жалит как пчела!</label>
-      <section class="featured-goods-section-1">
-        <img src="/img/featured/slider-1.png" alt="Самая длинная палка для селфи">
-        <b class="slide-number">
-          01
-        </b>
-        <h3 class="slogan">
-          Делай селфи,<br>
-          как Бен Стиллер!
-        </h3>
-        <p class="description">
-          Самая длинная палка для селфи доступна в нашем магазине.<br>
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table>
+      <!-- TODO  display:contents -->
+      <!-- <section class="featured-goods-section-1"> -->
+        <div id="featured-goods-anchor-1" class="fixed-anchor featured-1"></div>
+        <div id="featured-goods-anchor-2" class="fixed-anchor featured-2"></div>
+        <div id="featured-goods-anchor-3" class="fixed-anchor featured-3"></div>
+        <div class="slide-1 no-js img">
+          <img src="/img/featured/slider-1.png" alt="Самая длинная палка для селфи"> 
+        </div>
+        <div class="slide-1 no-js top">
+          <b class="slide-number">
+            01
+          </b>
+          <h3 class="slogan">
+            Делай селфи,<br>
+            как Бен Стиллер!
+          </h3>
+          <p class="description">
+            Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+        </div>
+        <div class="slide-1 no-js more">
+            <a href="#" class="yellow-stripe-button">Подробнее</a>
+        </div>
+        <table class="slide-1 no-js table">
           <tr>
             <td>8,5 м</td>
             <td>5 кг</td>
@@ -90,22 +94,29 @@
             <th>Материал</th>
           </tr>
         </table>
-      </section>
-      <section class="featured-goods-section-2">
-        <img src="/img/featured/slider-2.png" alt="Мотивирующие фитнес-браслеты">
-        <b class="slide-number">
-          02
-        </b>
-        <h3 class="slogan">
-          Худеем<br>
-          правильно!
-        </h3>
-        <p class="description">
-          Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-          не пропускать занятия и соблюдать диету.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table>
+      <!-- </section> -->
+      <!-- <section class="featured-goods-section-2"> -->
+          
+        <div class="slide-2 no-js img">
+          <img src="/img/featured/slider-2.png" alt="Мотивирующие фитнес-браслеты"> 
+        </div>        
+        <div class="slide-2 no-js top">
+          <b class="slide-number">
+                02
+          </b>
+          <h3 class="slogan">
+            Худеем<br>
+            правильно!
+          </h3>
+          <p class="description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+            не пропускать занятия и соблюдать диету.
+          </p>
+        </div>
+        <div class="slide-2 no-js more">
+          <a href="#" class="yellow-stripe-button">Подробнее</a>
+        </div>        
+        <table class="slide-2 no-js table">
           <tr>
             <td>48 часов</td>
           </tr>
@@ -113,22 +124,29 @@
             <th>Без подзарядки</th>
           </tr>
         </table>
-      </section>
-      <section class="featured-goods-section-3">
-        <img src="/img/featured/slider-3.png" alt="Квадрокоптер с лазером">
-        <b class="slide-number">
-          03
-        </b>
-        <h3 class="slogan">
-          Порхает как бабочка,<br>
-          жалит как пчела!
-        </h3>
-        <p class="description">
-          Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-          мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table>
+      <!-- </section> -->
+      <!-- <section class="featured-goods-section-3"> -->
+          
+        <div class="slide-3 no-js img">
+          <img src="/img/featured/slider-3.png" alt="Квадрокоптер с лазером">
+        </div>
+        <div class="slide-3 no-js top">
+          <b class="slide-number">
+              03
+          </b>
+          <h3 class="slogan">
+            Порхает как бабочка,<br>
+            жалит как пчела!
+          </h3>
+          <p class="description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+        </div>
+        <div class="slide-3 no-js more">
+          <a href="#" class="yellow-stripe-button">Подробнее</a>
+        </div>        
+        <table class="slide-3 no-js table">
           <tr>
             <td>800 м</td>
             <td>50 м</td>
@@ -138,7 +156,18 @@
             <th>Радиус поражения</th>
           </tr>
         </table>
-      </section>
+      <!-- </section> -->
+      <div class="featured-goods-controls">
+          <a href="#featured-goods-anchor-1" class="featured-goods-anchor link-1 no-js" data-slide="1">
+            <span class="visually-hidden">Первый слайд — Делай селфи, как Бен Стиллер!</span>
+          </a>
+          <a href="#featured-goods-anchor-2" class="featured-goods-anchor link-2 no-js" data-slide="2">
+            <span class="visually-hidden">Второй слайд — Худеем правильно!</span>
+          </a>
+          <a href="#featured-goods-anchor-3" class="featured-goods-anchor link-3 no-js" data-slide="3">
+            <span class="visually-hidden">Третий слайд — Порхает как бабочка, жалит как пчела!</span>
+          </a>
+      </div>
     </section>
     <section class="featured-categories">
       <ul class="featured-categories-list">

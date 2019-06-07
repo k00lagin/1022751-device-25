@@ -10,6 +10,189 @@
   font-weight: 800;
   font-display: swap;
   src: local("Gilroy ExtraBold"), url(/fonts/gilroyextrabold.woff) format("woff"), url(/fonts/gilroyextrabold.woff2) format("woff2"); }
+.featured-goods {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 310px 50px 230px;
+  grid-template-rows: 310px 50px 230px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.featured-goods::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-color: #f7e296;
+  width: 100%;
+  height: 110px;
+}
+
+.featured-goods img {
+  margin-left: 90px;
+}
+
+.featured-goods .slide-number {
+  font-size: 179px;
+  line-height: 179px;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  top: -15px;
+  right: 20px;
+  width: 210px;
+  position: absolute;
+  z-index: -1;
+}
+
+.featured-goods-controls {
+  display: flex;
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  grid-area: 2 / 3 / 3 / 4;
+  justify-content: flex-end;
+}
+
+[href^="#featured-goods-anchor"] {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/utility-icons/slider-button-empty.svg);
+}
+
+.featured-goods .slogan {
+  font-size: 47px;
+  line-height: 56px;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  margin: 78px 0 0 20px;
+  letter-spacing: 0.5px;
+}
+
+.featured-goods .description {
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  margin: 19.5px 0 0 19px;
+  letter-spacing: 0.2px;
+}
+
+[class^=slide] {
+  display: none;
+}
+
+[class^=slide].current:not(.no-js) {
+  display: block;
+}
+
+.featured-goods-anchor.current:not(.no-js) {
+  background-image: url(/img/utility-icons/slider-button.svg);
+}
+
+.fixed-anchor.featured-1:not(:target)+.fixed-anchor.featured-2:not(:target)+.fixed-anchor.featured-3:not(:target)~.featured-goods-controls>.featured-goods-anchor.link-1.no-js,
+.fixed-anchor.featured-1:target~.featured-goods-controls>.featured-goods-anchor.link-1.no-js,
+.fixed-anchor.featured-2:target~.featured-goods-controls>.featured-goods-anchor.link-2.no-js,
+.fixed-anchor.featured-3:target~.featured-goods-controls>.featured-goods-anchor.link-3.no-js {
+  background-image: url(/img/utility-icons/slider-button.svg);
+}
+
+.fixed-anchor.featured-1:not(:target)+.fixed-anchor.featured-2:not(:target)+.fixed-anchor.featured-3:not(:target)~.slide-1.no-js,
+.fixed-anchor.featured-1:target~.slide-1.no-js,
+.fixed-anchor.featured-2:target~.slide-2.no-js,
+.fixed-anchor.featured-3:target~.slide-3.no-js {
+  display: block;
+}
+
+[class^=slide].img {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+[class^=slide].top {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 2 / 2 / 4;
+  position: relative;
+}
+
+[class^=slide].top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+  top: 36px;
+  left: 20px;
+}
+
+[class^=slide].more {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+[class^=slide].more a {
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+[class^=slide].table {
+  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 2 / 4 / 4;
+  padding-left: 15.5px;
+  padding-top: 38px;
+}
+
+[class^=slide].table th {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #464646;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+
+[class^=slide].table td {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+}
+
+[class^=slide].table td:first-child {
+  min-width: 156px;
+}
+
+[class^=slide].table td:nth-child(2) {
+  min-width: 137px;
+}
+
+.featured-goods-controls a {
+  margin-right: 21px;
+  margin-top: 16px;
+}
+
+.featured-goods-controls a:last-child {
+  margin-right: 83px;
+}
 
 
 
