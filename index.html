@@ -267,7 +267,7 @@
         <a href="/img/map-big.png" class="contacts-map-link" aria-haspopup="dialog">
           <img src="/img/map.png" width="560" height="222" alt="Наш офис находится в Москве по улице Строителей, 15" class="contacts-map-img">
         </a>
-        <a href="/write-us" class="btn" aria-haspopup="dialog">Напишите нам</a>
+        <a href="/write-us" class="yellow-stripe-button write-us-dialog-trigger" aria-haspopup="dialog">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -308,7 +308,7 @@
   </div>
 </footer>
 
-  <dialog class="common-dialog write-us" id="write-us-dialog">
+  <dialog class="common-dialog write-us-dialog">
     <form action="//echo.htmlacademy.ru" method="POST">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="name-n-email">
@@ -327,12 +327,12 @@
       </label>
       <button class="write-us-submit yellow-stripe-button" type="submit">Отправить</button>      
     </form>
-    <button class="close-btn" id="close-write-us-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+    <button class="close-btn close-write-us-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
   </dialog>
   <dialog class="common-dialog popup-map"  id="popup-map">    
     <iframe class="popup-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1558548353779!5m2!1sru!2sru"  width="960" height="559" frameborder="0" allowfullscreen></iframe>
     <img src="/img/map-big.png" alt="Наш офис находится в Москве по улице Строителей, 15" width="960" height="559">
-    <button class="close-btn" id="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
+    <button class="close-btn close-map-button" id="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
   </dialog>
   <script src="/js/index.js"></script>
 </body>
