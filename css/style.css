@@ -259,3 +259,186 @@ dialog:not([open]) {
 
 
 }
+/*  */
+/* SERVICES */
+/*  */
+.service-anchor {
+  position: relative;
+  top: -100px;
+}
+
+.services {
+  background-color: #e5e5e5;
+  min-height: 288px;
+  margin-bottom: 95px;
+}
+
+.services>.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.service-controls {
+  width: 280px;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+.service-controls::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -100px;
+  height: 320px;
+  width: 7px;
+  background-color: #000;
+}
+
+.service-controls a:first-child {
+  margin-top: -20px;
+}
+
+.service-controls a {
+  margin-bottom: 24px;
+  width: 160px;
+}
+
+.services section {
+  padding-left: 117px;
+  box-sizing: border-box;
+  display: none;
+  width: 880px;
+  position: relative;
+}
+
+.services h3 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-top: -26px;
+}
+
+.services p {
+  margin: 0;
+  max-width: 436px;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.service-section.delivery::after,
+.service-section.warranty::after,
+.service-section.credit::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.service-section.delivery::after {
+  background: url(/img/service-icons/delivery.svg) center no-repeat;
+  width: 136px;
+  height: 164px;
+  top: -15px;
+  right: 66px;
+}
+
+.service-section.warranty::after {
+  background: url(/img/service-icons/warranty.svg) center no-repeat;
+  width: 171px;
+  height: 194px;
+  top: -39px;
+  right: 46px;
+}
+
+.service-section.credit::after {
+  background: url(/img/service-icons/credit.svg) center no-repeat;
+  width: 156px;
+  height: 186px;
+  top: -39px;
+  right: 70px;
+}
+
+.fixed-anchor {
+  position: fixed;
+}
+
+/*
+    SERVICES SWITCH STYLES
+*/
+.service-anchor-link.current:not(.no-js),
+.service-controls>a:active {
+  color: #f7e184;
+}
+
+.service-anchor-link.current:not(.no-js)::before,
+.service-controls>a:active::before {
+  background-color: #000;
+  height: 100%;
+}
+
+.service-anchor-link.current:not(.no-js)::after,
+.service-controls>a:active::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  right: -120px;
+  top: 0;
+  background-color: #000;
+}
+
+.service-section.current:not(.no-js) {
+  display: block;
+}
+
+/*
+    SERVICES SWITCH STYLES NO-JS FALLBACK
+*/
+.service-anchor.delivery:not(:target)+.service-anchor.warranty:not(:target)+.fixed-anchor.delivery:not(:target)+.fixed-anchor.warranty:not(:target)+.fixed-anchor.credit:not(:target)~.service-controls .service-anchor-link.delivery.no-js,
+.service-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js,
+.service-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js,
+.fixed-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js,
+.fixed-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js,
+.fixed-anchor.credit:target~.service-controls .service-anchor-link.credit.no-js {
+  color: #f7e184;
+}
+
+.service-anchor.delivery:not(:target)+.service-anchor.warranty:not(:target)+.fixed-anchor.delivery:not(:target)+.fixed-anchor.warranty:not(:target)+.fixed-anchor.credit:not(:target)~.service-controls .service-anchor-link.delivery.no-js::before,
+.service-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js::before,
+.service-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js::before,
+.fixed-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js::before,
+.fixed-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js::before,
+.fixed-anchor.credit:target~.service-controls .service-anchor-link.credit.no-js::before {
+  background-color: #000;
+  height: 100%;
+}
+
+.service-anchor.delivery:not(:target)+.service-anchor.warranty:not(:target)+.fixed-anchor.delivery:not(:target)+.fixed-anchor.warranty:not(:target)+.fixed-anchor.credit:not(:target)~.service-controls .service-anchor-link.delivery.no-js::after,
+.service-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js::after,
+.service-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js::after,
+.fixed-anchor.delivery:target~.service-controls .service-anchor-link.delivery.no-js::after,
+.fixed-anchor.warranty:target~.service-controls .service-anchor-link.warranty.no-js::after,
+.fixed-anchor.credit:target~.service-controls .service-anchor-link.credit.no-js::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  right: -120px;
+  top: 0;
+  background-color: #000;
+}
+
+.service-anchor.delivery:not(:target)+.service-anchor.warranty:not(:target)+.fixed-anchor.delivery:not(:target)+.fixed-anchor.warranty:not(:target)+.fixed-anchor.credit:not(:target)~.service-section.delivery.no-js,
+.service-anchor.delivery:target~.service-section.delivery.no-js,
+.service-anchor.warranty:target~.service-section.warranty.no-js,
+.fixed-anchor.delivery:target~.service-section.delivery.no-js,
+.fixed-anchor.warranty:target~.service-section.warranty.no-js,
+.fixed-anchor.credit:target~.service-section.credit.no-js {
+  display: block;
+}

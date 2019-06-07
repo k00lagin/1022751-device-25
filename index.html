@@ -192,34 +192,40 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="visually-hidden">Услуги</h2>
-      <input class="visually-hidden" type="radio" name="services-switch" id="service-delivery" checked>
-      <input class="visually-hidden" type="radio" name="services-switch" id="service-warranty">
-      <input class="visually-hidden" type="radio" name="services-switch" id="service-credit">      
-      <label for="service-delivery">Доставка</label>
-      <label for="service-warranty">Гарантия</label>
-      <label for="service-credit">Кредит</label>
-      <section class="service-delivery-section">
-        <h3>Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-        </p>
-      </section>
-      <section class="service-warranty-section">
-        <h3>Гарантия</h3>
-        <p>
-          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
-          Товар, не дом, конечно же.
-        </p>
-      </section>
-      <section class="service-credit-section">
-        <h3>Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-          условия кредита. Выгодные для нашего банка, разумеется.
-        </p>
-      </section>
-    </section>
+      <div class="wrap">
+        <h2 class="visually-hidden">Услуги</h2>
+        <span id="Delivery" class="service-anchor delivery" aria-hidden="true"></span>
+        <span id="Warranty" class="service-anchor warranty" aria-hidden="true"></span>
+        <div class="fixed-anchor delivery" id="service-delivery-anchor"></div>
+        <div class="fixed-anchor warranty" id="service-warranty-anchor"></div>
+        <div class="fixed-anchor credit" id="service-credit-anchor"></div>
+        <div class="service-controls">
+          <a href="#service-delivery-anchor" class="yellow-stripe-button service-anchor-link delivery no-js" data-service="delivery">Доставка</a>
+          <a href="#service-warranty-anchor" class="yellow-stripe-button service-anchor-link warranty no-js" data-service="warranty">Гарантия</a>
+          <a href="#service-credit-anchor" class="yellow-stripe-button service-anchor-link credit no-js" data-service="credit">Кредит</a>
+        </div>
+        <section class="service-section delivery no-js">
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+        </section>
+        <section class="service-section warranty no-js">
+          <h3>Гарантия</h3>
+          <p>
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+            Товар, не дом, конечно же.
+          </p>
+        </section>
+        <section class="service-section credit no-js">
+          <h3>Кредит</h3>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+            условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </section>
+      </div>
+    </section>    
     <section class="brands">
       <h2 class="visually-hidden">Наши партнёры</h2>
       <ul>
