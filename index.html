@@ -308,30 +308,31 @@
   </div>
 </footer>
 
-  <dialog class="write-us">
+  <dialog class="common-dialog write-us" id="write-us-dialog">
     <form action="//echo.htmlacademy.ru" method="POST">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="name-n-email">
-        <label for="write-us-name">
+        <label for="write-us-name" class="write-us-name-label">
             Ваше имя:
-          <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
+          <input type="text" name="name" id="write-us-name" class="write-us-name-input" placeholder="Имя Фамилия">
         </label>
-        <label for="write-us-email">
+        <label for="write-us-email" class="write-us-email-label">
           Ваш e-mail:
-          <input type="email" name="email" id="write-us-email" placeholder="email@example.com">
+          <input type="email" name="email" id="write-us-email" class="write-us-email-input" placeholder="email@example.com">
         </label>
       </div>
-      <label for="write-us-message">
+      <label for="write-us-message" class="write-us-message-label">
         Текст письма:
-        <textarea name="message" id="write-us-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea name="message" id="write-us-message" class="write-us-message-input" placeholder="В свободной форме"></textarea>
       </label>
       <button class="write-us-submit yellow-stripe-button" type="submit">Отправить</button>      
     </form>
-    <button class="close-btn" type="button">Закрыть форму</button>
+    <button class="close-btn" id="close-write-us-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
   </dialog>
-  <dialog class="popup-map"  id="popup-map">    
+  <dialog class="common-dialog popup-map"  id="popup-map">    
     <iframe class="popup-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1558548353779!5m2!1sru!2sru"  width="960" height="559" frameborder="0" allowfullscreen></iframe>
-    <button class="close-btn" type="button">Закрыть карту</button>
+    <img src="/img/map-big.png" alt="Наш офис находится в Москве по улице Строителей, 15" width="960" height="559">
+    <button class="close-btn" id="close-map-button" type="button"><span class="visually-hidden">Закрыть карту</span></button>
   </dialog>
 </body>
 
