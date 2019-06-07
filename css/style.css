@@ -576,16 +576,103 @@ form.search button:active {
   margin-right: 83px;
 }
 
-
-
-
-
-
-
-
-
-
+.featured-categories {
+  width: 1160px;
+  margin: 0 auto;
+  min-height: 422px;
 }
+
+.featured-categories-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-categorie {
+  width: 160px;
+}
+
+.featured-categorie:not(:last-child) {
+  margin-right: 40px;
+}
+
+.featured-categorie-img-link {
+  letter-spacing: 0.2px;
+}
+
+.featured-categorie-img-link::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: rgba(240, 198, 45, 0.5);
+  background-repeat: no-repeat;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.featured-categorie-img-link:hover::before {
+  background-color: #f0c62d;
+}
+
+.featured-categorie-img-link:active::before {
+  background-color: #f0c62d;
+  box-shadow: inset 160px 0 rgba(240, 198, 45, 0.5);
+}
+
+.featured-categorie-img-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.featured-categorie-img-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.featured-categorie-img-link.vr::before {
+  background-image: url(/img/categorie-icons/vr.svg);
+  background-size: 97px 55px;
+  background-position: 31px 52px;
+}
+
+.featured-categorie-img-link.selfie-stick::before {
+  background-image: url(/img/categorie-icons/selfie-stick.svg);
+  background-size: 86px 117px;
+  background-position: 38px 41px;
+}
+
+.featured-categorie-img-link.action-camera::before {
+  background-image: url(/img/categorie-icons/action-camera.svg);
+  background-size: 71px 87px;
+  background-position: 49px 38px;
+}
+
+.featured-categorie-img-link.fitness-tracker::before {
+  background-image: url(/img/categorie-icons/fitness-tracker.svg);
+  background-size: 107px 65px;
+  background-position: 28px 50px;
+}
+
+.featured-categorie-img-link.smart-watch::before {
+  background-image: url(/img/categorie-icons/smart-watch.svg);
+  background-size: 56px 98px;
+  background-position: 55px 32px;
+}
+
+.featured-categorie-img-link.quadcopter::before {
+  background-image: url(/img/categorie-icons/quadcopter.svg);
+  background-size: 132px 69px;
+  background-position: 13px 49px;
+}
+
+.featured-categorie-img-link {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .brands {
   width: 1160px;
   margin: 0 auto;
