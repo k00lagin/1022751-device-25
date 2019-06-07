@@ -53,18 +53,62 @@ dialog:not([open]) {
   font-display: swap;
   src: local("Gilroy ExtraBold"), url(/fonts/gilroyextrabold.woff) format("woff"), url(/fonts/gilroyextrabold.woff2) format("woff2");
 }
-@font-face {
-  font-family: 'Gilroy';
-  font-style: normal;
+
+/*  */
+/* COMMON STYLES */
+/*  */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
-  font-display: swap;
-  src: local("Gilroy Light"), url(/fonts/gilroylight.woff) format("woff"), url(/fonts/gilroylight.woff2) format("woff2"); }
-@font-face {
-  font-family: 'Gilroy';
-  font-style: normal;
+  color: #000;
+  background-color: #fff;
+}
+
+.yellow-stripe-button {
+  display: inline-block;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
-  font-display: swap;
-  src: local("Gilroy ExtraBold"), url(/fonts/gilroyextrabold.woff) format("woff"), url(/fonts/gilroyextrabold.woff2) format("woff2"); }
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: 3.6px;
+  width: 220px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  position: relative;
+  padding: 0;
+  z-index: 1;
+}
+
+.yellow-stripe-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.yellow-stripe-button:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .2s height;
+}
+
+.yellow-stripe-button:hover:before,
+.yellow-stripe-button:focus:before {
+  height: 100%;
+}
+
+.yellow-stripe-button:focus {
+  outline: none;
+}
 .featured-goods {
   position: relative;
   width: 1160px;
