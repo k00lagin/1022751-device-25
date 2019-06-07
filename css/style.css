@@ -505,3 +505,164 @@ dialog:not([open]) {
 .fixed-anchor.credit:target~.service-section.credit.no-js {
   display: block;
 }
+.common-dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.common-dialog[open] {
+  animation-name: show-dialog;
+  animation-duration: .6s;
+  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@keyframes show-dialog {
+  from {
+    top: -50%;
+  }
+
+  75% {
+    top: 60%;
+  }
+
+  90% {
+    top: 45%;
+  }
+
+  to {
+    top: 50%;
+  }
+}
+
+.popup-map {
+  width: 960px;
+  height: 559px;
+  margin-top: -279px;
+  margin-left: -480px;
+  background: url(/img/map.png) center/cover no-repeat;
+}
+
+.popup-map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.close-btn {
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(240, 197, 46, 0.5);
+  position: absolute;
+  right: 22px;
+  top: 22px;
+}
+
+.close-btn:hover {
+  background-color: #f0c52e;
+}
+
+.close-btn:active {
+  background-color: rgba(240, 197, 46, 0.3);
+}
+
+.close-btn::before,
+.close-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-btn::before {
+  width: 22px;
+  height: 2px;
+}
+
+.close-btn::after {
+  width: 2px;
+  height: 22px;
+}
+
+.write-us {
+  width: 960px;
+  height: 553px;
+  margin-top: -279px;
+  margin-left: -480px;
+  padding: 80px 100px;
+  box-sizing: border-box;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.write-us input,
+.write-us textarea {
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  line-height: 18px;
+  border: 3px solid transparent;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  background-color: #fff;
+  border: 3px solid #f0c52e;
+  color: #464646;
+  outline: none;
+}
+
+.write-us input:invalid,
+.write-us textarea:invalid {
+  background-color: #f6dada;
+}
+
+.write-us input::placeholder,
+.write-us textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.name-n-email {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.write-us-name-label {
+  margin-right: 40px;
+}
+
+.write-us-name-input,
+.write-us-message-input {
+  width: 360px;
+  height: 50px;
+}
+
+.write-us-message-label {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 40px;
+}
+
+.write-us-message-input {
+  height: 156px;
+  resize: none;
+  width: 100%;
+}
