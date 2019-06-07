@@ -1139,7 +1139,7 @@ form.search button:active {
   height: 22px;
 }
 
-.write-us {
+.write-us-dialog {
   width: 960px;
   height: 553px;
   margin-top: -279px;
@@ -1152,8 +1152,8 @@ form.search button:active {
   line-height: 24px;
 }
 
-.write-us input,
-.write-us textarea {
+.write-us-dialog input,
+.write-us-dialog textarea {
   background-color: #f2f2f2;
   border: 0;
   font-size: 14px;
@@ -1163,26 +1163,26 @@ form.search button:active {
   box-sizing: border-box;
 }
 
-.write-us input:hover,
-.write-us textarea:hover {
+.write-us-dialog input:hover,
+.write-us-dialog textarea:hover {
   background-color: #eaeaea;
 }
 
-.write-us input:focus,
-.write-us textarea:focus {
+.write-us-dialog input:focus,
+.write-us-dialog textarea:focus {
   background-color: #fff;
   border: 3px solid #f0c52e;
   color: #464646;
   outline: none;
 }
 
-.write-us input:invalid,
-.write-us textarea:invalid {
+.write-us-dialog input:invalid,
+.write-us-dialog textarea:invalid {
   background-color: #f6dada;
 }
 
-.write-us input::placeholder,
-.write-us textarea::placeholder {
+.write-us-dialog input::placeholder,
+.write-us-dialog textarea::placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
