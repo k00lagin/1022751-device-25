@@ -259,6 +259,69 @@ dialog:not([open]) {
 
 
 }
+.brands {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 145px;
+}
+
+.brands>ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.brand.dji .logo-img {
+  background-image: url(/img/brands/dji-translucent.png);
+}
+
+.brand.dji:hover>.logo-img,
+.brand.dji:focus>.logo-img,
+.brand.dji:active>.logo-img {
+  background-image: url(/img/brands/dji.png);
+}
+
+.brand.spgadgets .logo-img {
+  background-image: url(/img/brands/spgadgets-translucent.png);
+}
+
+.brand.spgadgets:hover>.logo-img,
+.brand.spgadgets:focus>.logo-img,
+.brand.spgadgets:active>.logo-img {
+  background-image: url(/img/brands/spgadgets.png);
+}
+
+.brand.gopro .logo-img {
+  background-image: url(/img/brands/gopro-translucent.png);
+}
+
+.brand.gopro:hover>.logo-img,
+.brand.gopro:focus>.logo-img,
+.brand.gopro:active>.logo-img {
+  background-image: url(/img/brands/gopro.png);
+}
+
+.brand.vive .logo-img {
+  background-image: url(/img/brands/vive-translucent.png);
+}
+
+.brand.vive:hover>.logo-img,
+.brand.vive:focus>.logo-img,
+.brand.vive:active>.logo-img {
+  background-image: url(/img/brands/vive.png);
+}
+
+.brands .logo-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: 100%;
+  display: block;
+  width: 260px;
+  height: 100px;
+}
 /*  */
 /* SERVICES */
 /*  */
