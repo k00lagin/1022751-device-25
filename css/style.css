@@ -1282,8 +1282,8 @@ section.catalog {
   display: flex;
 }
 
-textarea[name=price-min],
-textarea[name=price-max] {
+[name=price-min],
+[name=price-max] {
   width: 16px;
   border: 0;
   background: 0;

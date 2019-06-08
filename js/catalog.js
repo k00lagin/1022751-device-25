@@ -8,18 +8,14 @@ function updateRange() {
 	var highestPrice = Number(minPriceInput.getAttribute('max'));
 	if (minPrice > maxPrice) {
 		let temp = minPrice;
-		//maxPriceInput.value = minPrice;
 		minPrice = maxPrice;
-		//minPriceInput.value = maxPrice;
 		maxPrice = temp;
 	}
 	if (minPrice < 0) {
 		minPrice = 0;
-		//minPriceInput.value = minPrice;
 	}
 	if (maxPrice > highestPrice) {
 		maxPrice = highestPrice;
-		//maxPriceInput.value = maxPrice;
 	}
 	var minPriceOffset = 201 * minPrice / highestPrice;
 	var maxPriceOffset = 201 * maxPrice / highestPrice;
@@ -80,13 +76,23 @@ function handleRangeClick(e) {
 		}
 		var range = this;
 		updateRange();
-
+	}
+}
+function swapPrices() {
+	var minPriceInput = document.getElementById("price-min");
+	var maxPriceInput = document.getElementById("price-max");
+	if (Number(minPriceInput.value) > Number(maxPriceInput.value)) {
+		var temp = minPriceInput.value;
+		minPriceInput.value = maxPriceInput.value;
+		maxPriceInput.value = temp;
 	}
 }
 document.getElementById("price-min").addEventListener("keyup", updateRange);
 document.getElementById("price-max").addEventListener("keyup", updateRange);
 document.getElementById("price-min").addEventListener("change", updateRange);
 document.getElementById("price-max").addEventListener("change", updateRange);
+document.getElementById("price-min").addEventListener("blur", swapPrices);
+document.getElementById("price-max").addEventListener("blur", swapPrices);
 
 document.getElementById("price-min").addEventListener("keydown", updateInputWidth);
 document.getElementById("price-max").addEventListener("keydown", updateInputWidth);
