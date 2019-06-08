@@ -1051,6 +1051,29 @@ form.search button:active {
 .breadcrumbs a:active {
   opacity: .1;
 }
+
+header.catalog-header {
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.catalog-header>h1 {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-top: 35px;
+  margin-bottom: 23px;
+}
+
+section.catalog {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
 /*  */
 /* PAGE FOOTER */
 /*  */
