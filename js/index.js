@@ -25,8 +25,26 @@ function showWriteUs(e) {
 
 function hideWriteUs() {
     var writeDialog = document.querySelector(".write-us-dialog");
+    if (writeDialog.classList.contains("error")) {
+        writeDialog.classList.remove("error");
+    }
     writeDialog.removeAttribute("open");
 }
+function sendUsAMessage(e) {
+    var writeDialog = document.querySelector(".write-us-dialog");
+    if (writeDialog.classList.contains("error")) {
+        writeDialog.classList.remove("error");
+        writeDialog.offsetWidth = writeDialog.offsetWidth;
+    }
+    var nameInput = writeDialog.querySelector(".write-us-name-input");
+    var emailInput = writeDialog.querySelector(".write-us-email-input");
+    var messageInput = writeDialog.querySelector(".write-us-message-input");
+    if (!nameInput.value || !emailInput.value || !messageInput.value) {
+        e.preventDefault();
+        writeDialog.classList.add("error");
+    }
+}
+document.querySelector(".write-us-dialog form").addEventListener("submit", sendUsAMessage);
 writeUsTrigger.addEventListener("click", showWriteUs);
 mapCloseTrigger.addEventListener("click", hideWriteUs);
 
