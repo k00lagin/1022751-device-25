@@ -1074,6 +1074,64 @@ section.catalog {
   width: 1160px;
   margin: 0 auto;
 }
+
+/* */
+/* COMMON THINGS */
+/* */
+.filters input[type=checkbox]+label::before,
+.filters input[type=radio]+label::before {
+  content: "";
+  display: inline-block;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.filters input[type=checkbox]+label::before {
+  width: 27px;
+  height: 23px;
+  margin-right: 12px;
+  margin-left: -1px;
+}
+
+.filters input[type=radio]+label::before {
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  margin-right: 14px;
+  margin-left: -1px;
+}
+
+.filters input[type=checkbox]+label:hover::before,
+.filters input[type=radio]+label:hover::before {
+  opacity: .6;
+}
+
+.filters input[type=checkbox]+label::before {
+  background-image: url(/img/utility-icons/checkbox-off.svg);
+  background-size: 23px 23px;
+}
+
+.filters input[type=checkbox]:checked+label::before {
+  background-image: url(/img/utility-icons/checkbox-on.svg);
+  background-size: 27px 23px;
+}
+
+.filters input[type=radio]+label::before {
+  background: url(/img/utility-icons/radio-off.svg);
+}
+
+.filters input[type=radio]:checked+label::before {
+  background: url(/img/utility-icons/radio-on.svg);
+}
+
+.filters input:disabled+label {
+  color: #a6a6a6;
+  pointer-events: none;
+}
+
+.filters input:disabled+label::before {
+  opacity: .25;
+}
 /*  */
 /* PAGE FOOTER */
 /*  */
