@@ -155,7 +155,7 @@ form.search {
 }
 
 form.search [name=search-query] {
-  background: transparent url(img/utility-icons/search.svg) 4px center no-repeat;
+  background: transparent url(../img/utility-icons/search.svg) 4px center no-repeat;
   border: 0;
   padding-left: 40px;
   letter-spacing: -.1px;
@@ -268,7 +268,7 @@ form.search button:active {
   width: 16px;
   height: 16px;
   opacity: 0.3;
-  background: url(img/utility-icons/plus.svg) center no-repeat;
+  background: url(../img/utility-icons/plus.svg) center no-repeat;
 }
 
 .page-header .user-nav,
@@ -299,19 +299,19 @@ form.search button:active {
 .user-nav .user::before {
   margin-right: 13px;
   margin-top: 1px;
-  background: url(img/utility-icons/user.svg) center no-repeat;
+  background: url(../img/utility-icons/user.svg) center no-repeat;
 }
 
 .user-nav .compare::before {
   margin-right: 10px;
   margin-top: 1px;
-  background: url(img/utility-icons/compare.svg) center no-repeat;
+  background: url(../img/utility-icons/compare.svg) center no-repeat;
 }
 
 .user-nav .cart::before {
   margin-right: 12px;
   margin-top: 1px;
-  background: url(img/utility-icons/cart.svg) center no-repeat;
+  background: url(../img/utility-icons/cart.svg) center no-repeat;
 }
 
 .page-header .logo-link {
@@ -449,7 +449,7 @@ form.search button:active {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(img/utility-icons/slider-button-empty.svg);
+  background-image: url(../img/utility-icons/slider-button-empty.svg);
 }
 
 .featured-goods .slogan {
@@ -478,14 +478,14 @@ form.search button:active {
 }
 
 .featured-goods-anchor.current:not(.no-js) {
-  background-image: url(img/utility-icons/slider-button.svg);
+  background-image: url(../img/utility-icons/slider-button.svg);
 }
 
 .fixed-anchor.featured-1:not(:target)+.fixed-anchor.featured-2:not(:target)+.fixed-anchor.featured-3:not(:target)~.featured-goods-controls>.featured-goods-anchor.link-1.no-js,
 .fixed-anchor.featured-1:target~.featured-goods-controls>.featured-goods-anchor.link-1.no-js,
 .fixed-anchor.featured-2:target~.featured-goods-controls>.featured-goods-anchor.link-2.no-js,
 .fixed-anchor.featured-3:target~.featured-goods-controls>.featured-goods-anchor.link-3.no-js {
-  background-image: url(img/utility-icons/slider-button.svg);
+  background-image: url(../img/utility-icons/slider-button.svg);
 }
 
 .fixed-anchor.featured-1:not(:target)+.fixed-anchor.featured-2:not(:target)+.fixed-anchor.featured-3:not(:target)~.slide-1.no-js,
@@ -631,37 +631,37 @@ form.search button:active {
 }
 
 .featured-categorie-img-link.vr::before {
-  background-image: url(img/categorie-icons/vr.svg);
+  background-image: url(../img/categorie-icons/vr.svg);
   background-size: 97px 55px;
   background-position: 31px 52px;
 }
 
 .featured-categorie-img-link.selfie-stick::before {
-  background-image: url(img/categorie-icons/selfie-stick.svg);
+  background-image: url(../img/categorie-icons/selfie-stick.svg);
   background-size: 86px 117px;
   background-position: 38px 41px;
 }
 
 .featured-categorie-img-link.action-camera::before {
-  background-image: url(img/categorie-icons/action-camera.svg);
+  background-image: url(../img/categorie-icons/action-camera.svg);
   background-size: 71px 87px;
   background-position: 49px 38px;
 }
 
 .featured-categorie-img-link.fitness-tracker::before {
-  background-image: url(img/categorie-icons/fitness-tracker.svg);
+  background-image: url(../img/categorie-icons/fitness-tracker.svg);
   background-size: 107px 65px;
   background-position: 28px 50px;
 }
 
 .featured-categorie-img-link.smart-watch::before {
-  background-image: url(img/categorie-icons/smart-watch.svg);
+  background-image: url(../img/categorie-icons/smart-watch.svg);
   background-size: 56px 98px;
   background-position: 55px 32px;
 }
 
 .featured-categorie-img-link.quadcopter::before {
-  background-image: url(img/categorie-icons/quadcopter.svg);
+  background-image: url(../img/categorie-icons/quadcopter.svg);
   background-size: 132px 69px;
   background-position: 13px 49px;
 }
@@ -689,43 +689,43 @@ form.search button:active {
 }
 
 .brand.dji .logo-img {
-  background-image: url(img/brands/dji-translucent.png);
+  background-image: url(../img/brands/dji-translucent.png);
 }
 
 .brand.dji:hover>.logo-img,
 .brand.dji:focus>.logo-img,
 .brand.dji:active>.logo-img {
-  background-image: url(img/brands/dji.png);
+  background-image: url(../img/brands/dji.png);
 }
 
 .brand.spgadgets .logo-img {
-  background-image: url(img/brands/spgadgets-translucent.png);
+  background-image: url(../img/brands/spgadgets-translucent.png);
 }
 
 .brand.spgadgets:hover>.logo-img,
 .brand.spgadgets:focus>.logo-img,
 .brand.spgadgets:active>.logo-img {
-  background-image: url(img/brands/spgadgets.png);
+  background-image: url(../img/brands/spgadgets.png);
 }
 
 .brand.gopro .logo-img {
-  background-image: url(img/brands/gopro-translucent.png);
+  background-image: url(../img/brands/gopro-translucent.png);
 }
 
 .brand.gopro:hover>.logo-img,
 .brand.gopro:focus>.logo-img,
 .brand.gopro:active>.logo-img {
-  background-image: url(img/brands/gopro.png);
+  background-image: url(../img/brands/gopro.png);
 }
 
 .brand.vive .logo-img {
-  background-image: url(img/brands/vive-translucent.png);
+  background-image: url(../img/brands/vive-translucent.png);
 }
 
 .brand.vive:hover>.logo-img,
 .brand.vive:focus>.logo-img,
 .brand.vive:active>.logo-img {
-  background-image: url(img/brands/vive.png);
+  background-image: url(../img/brands/vive.png);
 }
 
 .brands .logo-img {
@@ -821,7 +821,7 @@ form.search button:active {
 }
 
 .service-section.delivery::after {
-  background: url(img/service-icons/delivery.svg) center no-repeat;
+  background: url(../img/service-icons/delivery.svg) center no-repeat;
   width: 136px;
   height: 164px;
   top: -15px;
@@ -829,7 +829,7 @@ form.search button:active {
 }
 
 .service-section.warranty::after {
-  background: url(img/service-icons/warranty.svg) center no-repeat;
+  background: url(../img/service-icons/warranty.svg) center no-repeat;
   width: 171px;
   height: 194px;
   top: -39px;
@@ -837,7 +837,7 @@ form.search button:active {
 }
 
 .service-section.credit::after {
-  background: url(img/service-icons/credit.svg) center no-repeat;
+  background: url(../img/service-icons/credit.svg) center no-repeat;
   width: 156px;
   height: 186px;
   top: -39px;
@@ -944,6 +944,17 @@ form.search button:active {
   letter-spacing: 0.5px;
   margin: 0;
   margin-bottom: 43px;
+  position: relative;
+}
+
+.info-n-contacts h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #000;
+  top: -53px;
 }
 
 .info {
@@ -1114,21 +1125,21 @@ section.catalog {
 }
 
 .filters input[type=checkbox]+label::before {
-  background-image: url(img/utility-icons/checkbox-off.svg);
+  background-image: url(../img/utility-icons/checkbox-off.svg);
   background-size: 23px 23px;
 }
 
 .filters input[type=checkbox]:checked+label::before {
-  background-image: url(img/utility-icons/checkbox-on.svg);
+  background-image: url(../img/utility-icons/checkbox-on.svg);
   background-size: 27px 23px;
 }
 
 .filters input[type=radio]+label::before {
-  background: url(img/utility-icons/radio-off.svg);
+  background: url(../img/utility-icons/radio-off.svg);
 }
 
 .filters input[type=radio]:checked+label::before {
-  background: url(img/utility-icons/radio-on.svg);
+  background: url(../img/utility-icons/radio-on.svg);
 }
 
 .filters input:disabled+label {
@@ -1243,7 +1254,7 @@ section.catalog {
   top: 1px;
   width: 20px;
   height: 22px;
-  background: url(img/utility-icons/filter-button.svg) center no-repeat;
+  background: url(../img/utility-icons/filter-button.svg) center no-repeat;
   margin-left: -6px;
   background-size: 100% 100%;
 }
@@ -1757,15 +1768,15 @@ fieldset.bluetooth label:not(:last-of-type) {
 
 .page-footer .login::before,
 .page-footer .user::before {
-  background: url(img/utility-icons/user-gold.svg) center no-repeat;
+  background: url(../img/utility-icons/user-gold.svg) center no-repeat;
 }
 
 .page-footer .compare::before {
-  background: url(img/utility-icons/compare-gold.svg) center no-repeat;
+  background: url(../img/utility-icons/compare-gold.svg) center no-repeat;
 }
 
 .page-footer .cart::before {
-  background: url(img/utility-icons/cart-gold.svg) center no-repeat;
+  background: url(../img/utility-icons/cart-gold.svg) center no-repeat;
 }
 
 .page-footer address {
@@ -1832,15 +1843,15 @@ fieldset.bluetooth label:not(:last-of-type) {
 }
 
 .social-button.facebook a {
-  background-image: url(img/social-icons/fb.svg);
+  background-image: url(../img/social-icons/fb.svg);
 }
 
 .social-button.instagram a {
-  background-image: url(img/social-icons/inst.svg);
+  background-image: url(../img/social-icons/inst.svg);
 }
 
 .social-button.twitter a {
-  background-image: url(img/social-icons/tw.svg);
+  background-image: url(../img/social-icons/tw.svg);
 }
 
 .page-footer .htmlacademy-link {
@@ -1928,7 +1939,7 @@ fieldset.bluetooth label:not(:last-of-type) {
   height: 559px;
   margin-top: -279px;
   margin-left: -480px;
-  background: url(img/map.png) center/cover no-repeat;
+  background: url(../img/map.png) center/cover no-repeat;
 }
 
 .popup-map iframe {
