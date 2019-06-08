@@ -5,7 +5,7 @@ function updateRange() {
 	var maxPriceInput = document.getElementById("price-max");
 	var minPrice = Number(minPriceInput.value);
 	var maxPrice = Number(maxPriceInput.value);
-	var highestPrice = Number(minPriceInput.getAttribute('max'));
+	var highestPrice = Number(minPriceInput.getAttribute("data-max"));
 	if (minPrice > maxPrice) {
 		let temp = minPrice;
 		minPrice = maxPrice;
@@ -51,14 +51,12 @@ function handleRangeClick(e) {
 		var maxPriceInput = document.getElementById("price-max");
 		var minPrice = Number(minPriceInput.value);
 		var maxPrice = Number(maxPriceInput.value);
-		var highestPrice = Number(minPriceInput.getAttribute('max'));
+		var highestPrice = Number(minPriceInput.getAttribute("data-max"));
 		if (minPrice < 0) {
 			minPrice = 0;
-			//minPriceInput.value = minPrice;
 		}
 		if (maxPrice > highestPrice) {
 			maxPrice = highestPrice;
-			//maxPriceInput.value = maxPrice;
 		}		
 		var newPrice = Math.floor((e.offsetX - 4) * highestPrice / 2010) * 10;
 		if (newPrice < 0) {
