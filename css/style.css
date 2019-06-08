@@ -1419,6 +1419,99 @@ fieldset.bluetooth label:not(:last-of-type) {
   font-size: 16px;
   line-height: 24px;
 }
+.sorting {
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 70px;
+  background-color: #ebebeb;
+  margin-bottom: 70px;
+}
+
+.sorting::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(50vw - 580px);
+  position: absolute;
+  right: calc(580px - 50vw);
+  background-color: #ebebeb;
+}
+
+.sorting h2 {
+  margin: 0 55px 0 74px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.sorting a {
+  font-size: 14px;
+}
+
+[class^=sort-by-].current:hover {
+  opacity: .6;
+}
+
+[class^=sort-by-].current:active {
+  opacity: .3;
+}
+
+[class^=sort-by-]:not(.current) {
+  opacity: .3;
+}
+
+[class^=sort-by-]:not(.current):hover {
+  opacity: .6;
+}
+
+[class^=sort-by-]:not(.current):active {
+  opacity: 1;
+}
+
+.sort-by-price,
+.sort-by-type {
+  margin-right: 30px;
+}
+
+.sort-by-popularity {
+  margin-right: auto;
+}
+
+.sort-order-asc,
+.sort-order-desc {
+  width: 0;
+  height: 0;
+  border: 11px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.sort-order-asc[href],
+.sort-order-desc[href] {
+  opacity: .2;
+}
+
+.sort-order-asc[href]:hover,
+.sort-order-desc[href]:hover {
+  opacity: .4;
+}
+
+.sort-order-asc[href]:active,
+.sort-order-desc[href]:active {
+  opacity: 1;
+}
+
+.sort-order-asc {
+  border-top: 0;
+  margin-right: 19px;
+}
+
+.sort-order-desc {
+  border-bottom: 0;
+}
 /*  */
 /* PAGE FOOTER */
 /*  */
