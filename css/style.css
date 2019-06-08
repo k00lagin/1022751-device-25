@@ -1132,6 +1132,125 @@ section.catalog {
 .filters input:disabled+label::before {
   opacity: .25;
 }
+
+/* */
+/* UNIQUE */
+/* */
+.filters {
+  background-color: #ebebeb;
+  width: 327px;
+  position: relative;
+}
+
+.filters::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(50vw - 580px);
+  position: absolute;
+  left: calc(580px - 50vw);
+  background-color: #ebebeb;
+}
+
+.filters-header::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(50vw - 580px);
+  position: absolute;
+  left: calc(580px - 50vw);
+  background-color: #d9d9d9;
+}
+
+.filters-header {
+  padding-left: 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 327px;
+  background-color: #d9d9d9;
+  height: 70px;
+  position: relative;
+}
+
+.filters-header h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+}
+
+.filters legend {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.filters>fieldset {
+  border: 0;
+  width: 201px;
+  padding: 0;
+  margin: 0;
+  margin-left: 59px;
+  position: relative;
+  min-height: 140px;
+}
+.filters>fieldset::before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  position: absolute;
+  top: -12px;
+  background: #000;
+}
+
+fieldset.color {
+  margin-bottom: 52px;
+}
+
+fieldset.color legend {
+  margin-bottom: 26px;
+}
+
+fieldset.color label {
+  display: flex;
+  align-items: center;
+  letter-spacing: -1.3px;
+}
+
+fieldset.color label:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+fieldset.bluetooth {
+  margin-bottom: 13px;
+}
+
+fieldset.bluetooth legend {
+  margin-bottom: 25px;
+}
+
+fieldset.bluetooth label {
+  display: flex;
+  align-items: center;
+  letter-spacing: -1px;
+}
+
+fieldset.bluetooth label:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.filters [type="submit"] {
+  margin-left: 59px;
+  width: 201px;
+}
+
 /*  */
 /* PAGE FOOTER */
 /*  */
