@@ -1512,6 +1512,91 @@ fieldset.bluetooth label:not(:last-of-type) {
 .sort-order-desc {
   border-bottom: 0;
 }
+
+.goods-container {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  flex-flow: row wrap;
+}
+
+.pagination {
+  display: flex;
+  width: 759px;
+  height: 70px;
+  margin-left: auto;
+  margin-bottom: 77px;
+  background-color: #ebebeb;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.pagination>a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 106px;
+}
+
+.pagination>a:first-of-type {
+  padding-left: 30px;
+  margin-right: auto;
+}
+
+.pagination>a:last-of-type {
+  padding-right: 30px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.pagination>a[href]:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination>a[href]:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination>a:not([href]) {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination li:first-of-type {
+  margin-left: 10px;
+}
+
+.pagination li:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.pagination li a[href] {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination li a[href]:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination li a[href]:active {
+  color: black;
+}
+
+.pagination>ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
 /*  */
 /* PAGE FOOTER */
 /*  */
