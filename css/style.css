@@ -1339,6 +1339,86 @@ fieldset.bluetooth label:not(:last-of-type) {
   width: 201px;
 }
 
+.goods {
+  width: 833px;
+  background-color: #fff;
+}
+
+.good {
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 360px;
+  position: relative;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.good:nth-child(2n + 1) {
+  margin-right: 40px;
+  margin-left: 73px;
+}
+
+.good .goods-photo {
+  height: 380px;
+  margin-bottom: 28px;
+}
+
+.photo-overlay {
+  width: 360px;
+  height: 380px;
+  position: absolute;
+  background-color: rgba(238, 238, 238, 0.7);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.photo-overlay a:first-of-type {
+  margin-top: 170px;
+  margin-bottom: 13px;
+}
+
+.photo-overlay a:last-of-type {
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.photo-overlay a:last-of-type:hover {
+  color: black;
+}
+
+.photo-overlay a:last-of-type:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.goods-photo:not(:hover)+.photo-overlay:not(:hover):not(:focus-within) {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.good h3 {
+  max-width: 260px;
+  margin: 0;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.good .price {
+  font-size: 16px;
+  line-height: 24px;
+}
 /*  */
 /* PAGE FOOTER */
 /*  */
