@@ -1946,6 +1946,7 @@ fieldset.bluetooth label:not(:last-of-type) {
   position: absolute;
   left: 0;
   top: 0;
+  border: 0;
 }
 
 .close-btn {
