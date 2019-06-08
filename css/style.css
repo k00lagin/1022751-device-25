@@ -1604,6 +1604,35 @@ fieldset.bluetooth label:not(:last-of-type) {
   min-height: 323px;
   padding: 65px 0;
   box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 440px 1fr;
+  grid-template-columns: 1fr 440px 1fr;
+  -ms-grid-rows: 35px 122px 35px;
+  grid-template-rows: 35px 122px 35px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 1160px;
+  margin: auto;
+  position: relative;
+}
+
+.page-footer::before,
+.page-footer::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(50vw - 580px);
+  position: absolute;
+  background-color: #464646;
+}
+
+.page-footer::before {
+  left: calc(580px - 50vw);
+}
+
+.page-footer::after {
+  right: calc(580px - 50vw);
 }
 
 .page-footer a {
