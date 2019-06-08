@@ -1999,6 +1999,7 @@ fieldset.bluetooth label:not(:last-of-type) {
   border: 3px solid transparent;
   padding: 10px 20px;
   box-sizing: border-box;
+  margin-top: 6px;
 }
 
 .write-us-dialog input:hover,
@@ -2034,7 +2035,7 @@ fieldset.bluetooth label:not(:last-of-type) {
 }
 
 .write-us-name-input,
-.write-us-message-input {
+.write-us-email-input {
   width: 360px;
   height: 50px;
 }
