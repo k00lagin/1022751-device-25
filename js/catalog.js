@@ -42,7 +42,6 @@ function updateRange() {
 }
 
 function updateInputWidth(e, node) {
-	console.log(this + ' = ' + e)
 	var input = node || this;
 	setTimeout(function () {
 		input.style.width = '';
