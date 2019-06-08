@@ -736,6 +736,7 @@ form.search button:active {
   width: 260px;
   height: 100px;
 }
+
 /*  */
 /* SERVICES */
 /*  */
@@ -1239,11 +1240,6 @@ section.catalog {
   background: url(/img/utility-icons/filter-button.svg) center no-repeat;
   margin-left: -6px;
   background-size: 100% 100%;
-}
-
-.price-range .handle:focus {
-  background-image: url(/img/utility-icons/filter-button-focus.svg);
-  outline: none;
 }
 
 .price-range .handle:active {
@@ -1799,6 +1795,7 @@ fieldset.bluetooth label:not(:last-of-type) {
 .page-footer .htmlacademy-link:active {
   opacity: .3;
 }
+
 .common-dialog {
   position: fixed;
   left: 50%;
