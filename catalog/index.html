@@ -92,18 +92,20 @@
             <div id="dummy-3"></div>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="color">
           <legend>Цвет</legend>
-          <label for="color-black"><input type="checkbox" name="color-black" id="color-black" checked>Чёрный</label>
-          <label for="color-white"><input type="checkbox" name="color-white" id="color-white">Белый</label>
-          <label for="color-blue"><input type="checkbox" name="color-blue" id="color-blue" checked>Синий</label>
-          <label for="color-red"><input type="checkbox" name="color-red" id="color-red" checked>Красный</label>
-          <label for="color-pink"><input type="checkbox" name="color-pink" id="color-pink">Розовый</label>
+          <input class="visually-hidden" type="checkbox" name="color-black" id="color-black" checked><label class="color" for="color-black">Чёрный</label>
+          <input class="visually-hidden" type="checkbox" name="color-white" id="color-white"><label class="color" for="color-white">Белый</label>
+          <input class="visually-hidden" type="checkbox" name="color-blue" id="color-blue" checked><label class="color" for="color-blue">Синий</label>
+          <input class="visually-hidden" type="checkbox" name="color-red" id="color-red" checked><label class="color" for="color-red">Красный</label>
+          <input class="visually-hidden" type="checkbox" name="color-pink" id="color-pink"><label class="color" for="color-pink">Розовый</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="boolean">
           <legend>Bluetooth</legend>
-          <label for="bluetooth-1"><input type="radio" name="bluetooth" id="bluetooth-1" checked>Есть</label>
-          <label for="bluetooth-0"><input type="radio" name="bluetooth" id="bluetooth-0">Нет</label>
+          <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-1" checked>
+          <label for="bluetooth-1">Есть</label>
+          <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-0">
+          <label for="bluetooth-0">Нет</label>
         </fieldset>
         <button type="submit" class="yellow-stripe-button">Показать</button>
       </form>
