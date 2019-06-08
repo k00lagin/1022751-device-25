@@ -1200,6 +1200,94 @@ section.catalog {
   position: relative;
   min-height: 140px;
 }
+
+.price-range {
+  position: relative;
+  top: 25px;
+  margin-bottom: 40px;
+  width: 201px;
+  display: block;
+  height: 22px;
+}
+
+.price-range::before {
+  content: "";
+  display: block;
+  width: 201px;
+  height: 2px;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 10px;
+}
+
+.price-range .colored-stripe {
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+}
+
+.price-range .handle {
+  border: 0;
+  z-index: 1;
+  position: absolute;
+  top: 1px;
+  width: 20px;
+  height: 22px;
+  background: url(/img/utility-icons/filter-button.svg) center no-repeat;
+  margin-left: -6px;
+  background-size: 100% 100%;
+}
+
+.price-range .handle:focus {
+  background-image: url(/img/utility-icons/filter-button-focus.svg);
+  outline: none;
+}
+
+.price-range .handle:active {
+  margin-top: -1px;
+  margin-left: -7px;
+  width: 22px;
+  height: 24px;
+}
+
+.inputs-wrap {
+  display: flex;
+  position: relative;
+  top: -15px;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+[for=price-min],
+[for=price-max] {
+  display: flex;
+}
+
+textarea[name=price-min],
+textarea[name=price-max] {
+  width: 16px;
+  border: 0;
+  background: 0;
+  padding: 1px;
+  resize: none;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+  padding-left: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.filters>fieldset:first-of-type {
+  margin-top: 81px;
+}
+
 .filters>fieldset::before {
   content: "";
   display: block;

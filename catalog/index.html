@@ -73,9 +73,24 @@
         </header>
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" name="price" multiple value="0,60" />
-          <span class="price-min">от 0</span>
-          <span class="price-max">до 5000</span>
+          <div class="price-range" id="price-range">
+            <div id="colored-stripe" class="colored-stripe"></div>
+            <button id="min-price-handle" class="handle" type="button"></button>
+            <button id="max-price-handle" class="handle" type="button"></button>
+          </div>
+          <div class="inputs-wrap">
+            <div id="dummy-1"></div>
+            <label id="min-price-label" for="price-min">
+              от
+              <textarea type="text" name="price-min" id="price-min" min="0" max="13000" maxlength="7" rows="1" wrap="off">0</textarea>
+            </label>    
+            <div id="dummy-2"></div>        
+            <label id="max-price-label" for="price-max">
+              до
+              <textarea type="text" name="price-max" id="price-max" min="0" max="13000" maxlength="7" rows="1" wrap="off">13000</textarea>
+            </label>
+            <div id="dummy-3"></div>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
