@@ -199,15 +199,24 @@ form.search button {
   border: 0;
 }
 
-form.search [name=search-query]:focus,
+form.search [name=search-query]:focus {
+  border-bottom: 2px solid #000;
+  color: #000;
+  outline: none;
+}
+
 form.search:focus-within [name=search-query] {
   border-bottom: 2px solid #000;
   color: #000;
   outline: none;
 }
 
+form.search:focus-within button {
+  display: block;
+  border: 2px solid #000;
+}
+
 form.search [name=search-query]:focus+button,
-form.search:focus-within button,
 form.search button:hover,
 form.search button:focus,
 form.search button:active {
