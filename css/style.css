@@ -1434,6 +1434,21 @@ fieldset.bluetooth label:not(:last-of-type) {
   color: rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .goods-photo:not(:hover)+.photo-overlay:not(:hover) {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}
+
 .goods-photo:not(:hover)+.photo-overlay:not(:hover):not(:focus-within) {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
