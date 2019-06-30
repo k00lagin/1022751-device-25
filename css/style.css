@@ -347,6 +347,21 @@ form.search button:active {
   display: flex;
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .nav-link.catalog:not(:hover):not(:focus)+.catalog-categories:not(:hover) {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}
+
 .nav-link.catalog:not(:hover):not(:focus)+.catalog-categories:not(:hover):not(:focus-within) {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -360,7 +375,7 @@ form.search button:active {
 }
 
 .catalog-categories {
-  align-content: start;
+  align-content: flex-start;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
