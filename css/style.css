@@ -2039,6 +2039,7 @@ fieldset.bluetooth label {
 	margin-top: -279px;
 	margin-left: -480px;
 	padding: 80px 100px;
+	padding-top: 93px;
 	box-sizing: border-box;
 	font-family: Gilroy, Arial, sans-serif;
 	font-size: 18px;
@@ -2053,7 +2054,6 @@ fieldset.bluetooth label {
 	font-size: 14px;
 	line-height: 18px;
 	border: 3px solid transparent;
-	padding: 10px 20px;
 	box-sizing: border-box;
 	margin-top: 6px;
 }
@@ -2083,11 +2083,21 @@ fieldset.bluetooth label {
 
 .name-n-email {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 }
 
 .write-us-name-label {
 	margin-right: 40px;
+}
+
+.write-us-name-input {
+	letter-spacing: .5px;
+	padding: 10px 17px;
+}
+
+.write-us-email-input {
+	letter-spacing: .2px;
+	padding: 10px 17px;
 }
 
 .write-us-name-input,
@@ -2099,11 +2109,20 @@ fieldset.bluetooth label {
 .write-us-message-label {
 	display: flex;
 	flex-flow: column nowrap;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
+	letter-spacing: .2px;
+	left: 1px;
+	position: relative;
 }
 
 .write-us-message-input {
 	height: 156px;
 	resize: none;
 	width: 100%;
+	letter-spacing: .15px;
+	padding: 13px 16px;
+}
+
+.write-us-submit {
+	width: 200px;
 }
