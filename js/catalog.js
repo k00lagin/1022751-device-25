@@ -39,7 +39,7 @@ function updateRange() {
 
 function updateInputWidth(e, node) {
 	var input = node || this;
-	setTimeout(function () {
+	setTimeout(function() {
 		input.style.width = '';
 		input.style.width = input.scrollWidth + 'px';
 	}, 0);
@@ -57,7 +57,7 @@ function handleRangeClick(e) {
 		}
 		if (maxPrice > highestPrice) {
 			maxPrice = highestPrice;
-		}		
+		}
 		var newPrice = Math.floor((e.offsetX - 4) * highestPrice / 2010) * 10;
 		if (newPrice < 0) {
 			newPrice = 0;
@@ -76,6 +76,7 @@ function handleRangeClick(e) {
 		updateRange();
 	}
 }
+
 function swapPrices() {
 	var minPriceInput = document.getElementById("price-min");
 	var maxPriceInput = document.getElementById("price-max");
