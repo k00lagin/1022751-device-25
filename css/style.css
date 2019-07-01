@@ -1414,8 +1414,9 @@ fieldset.bluetooth label {
 }
 
 .photo-overlay a:first-of-type {
+	width: 200px;
 	margin-top: 170px;
-	margin-bottom: 13px;
+	margin-bottom: 7px;
 }
 
 .photo-overlay a:last-of-type {
