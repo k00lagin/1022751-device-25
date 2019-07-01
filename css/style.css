@@ -329,7 +329,7 @@ form.search button:active {
 .page-header .logo-link {
 	position: absolute;
 	left: 60px;
-	top: -1em;
+	top: -20px;
 }
 
 .page-header .nav-item-user {
@@ -386,7 +386,7 @@ form.search button:active {
 	display: flex;
 	flex-flow: column wrap;
 	margin: 0;
-	padding: 30px 60px 20px;
+	padding: 19px 60px 20px;
 	position: absolute;
 	list-style: none;
 	background-color: #f7e296;
