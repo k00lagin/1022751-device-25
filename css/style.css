@@ -66,14 +66,15 @@ body {
 }
 
 .yellow-stripe-button {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: Gilroy, Arial, sans-serif;
 	font-weight: 800;
 	text-transform: uppercase;
 	font-size: 18px;
-	line-height: 40px;
+	line-height: 24px;
 	vertical-align: middle;
-	text-align: center;
 	letter-spacing: 3.6px;
 	width: 220px;
 	height: 40px;
@@ -160,6 +161,7 @@ form.search [name=search-query] {
 	border: 0;
 	padding-left: 40px;
 	letter-spacing: -.1px;
+	font-weight: 300;
 	padding-right: 50px;
 	box-sizing: border-box;
 	height: 49px;
@@ -994,6 +996,7 @@ form.search button:active {
 }
 
 .info p {
+	font-size: 15px;
 	max-width: 462px;
 	letter-spacing: -.71px;
 }
@@ -1346,13 +1349,11 @@ fieldset.color legend {
 }
 
 fieldset.color label {
+	font-size: 14px;
+	line-height: 40px;
 	display: flex;
 	align-items: center;
 	letter-spacing: -1.3px;
-}
-
-fieldset.color label:not(:last-child) {
-	margin-bottom: 17px;
 }
 
 fieldset.bluetooth {
@@ -1364,13 +1365,11 @@ fieldset.bluetooth legend {
 }
 
 fieldset.bluetooth label {
+	font-size: 14px;
+	line-height: 40px;
 	display: flex;
 	align-items: center;
 	letter-spacing: -1px;
-}
-
-fieldset.bluetooth label:not(:last-of-type) {
-	margin-bottom: 15px;
 }
 
 .filters [type="submit"] {
@@ -1536,6 +1535,7 @@ fieldset.bluetooth label:not(:last-of-type) {
 
 .sorting a {
 	font-size: 14px;
+	line-height: 18px;
 }
 
 [class^=sort-by-].current:hover {
@@ -1787,6 +1787,7 @@ fieldset.bluetooth label:not(:last-of-type) {
 	-ms-grid-row: 1;
 	grid-area: 1 / 3 / 2 / 5;
 	justify-content: flex-end;
+	line-height: 36px;
 }
 
 .page-footer .user-nav a {
