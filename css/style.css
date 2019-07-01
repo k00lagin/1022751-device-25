@@ -98,6 +98,7 @@ body {
 	background-color: #f0c52e;
 	position: absolute;
 	top: 50%;
+	left: 0;
 	transform: translateY(-50%);
 	z-index: -1;
 	transition: .2s height;
@@ -346,23 +347,18 @@ form.search button:active {
 	margin-right: 41px;
 }
 
-.page-header .catalog-categories {
+.catalog-categories {
+	display: none;
+}
+
+.nav-link.catalog:hover+.catalog-categories,
+.catalog-categories:hover {
 	display: flex;
 }
 
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-	.nav-link.catalog:not(:hover):not(:focus)+.catalog-categories:not(:hover) {
-		position: absolute;
-		clip: rect(1px 1px 1px 1px);
-		/* IE6, IE7 */
-		clip: rect(1px, 1px, 1px, 1px);
-		padding: 0;
-		border: 0;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-	}
+.catalog-categories:focus-within,
+.catalog-categories {
+	display: flex;
 }
 
 .nav-link.catalog:not(:hover):not(:focus)+.catalog-categories:not(:hover):not(:focus-within) {
@@ -383,7 +379,6 @@ form.search button:active {
 	line-height: 36px;
 	letter-spacing: 0.15px;
 	list-style: none;
-	display: flex;
 	flex-flow: column wrap;
 	margin: 0;
 	padding: 19px 60px 20px;
@@ -1403,14 +1398,19 @@ fieldset.bluetooth label {
 }
 
 .photo-overlay {
+	display: none;
 	width: 360px;
 	height: 380px;
 	position: absolute;
 	left: 0;
 	background-color: rgba(238, 238, 238, 0.7);
-	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+}
+
+.goods-photo:hover+.photo-overlay,
+.photo-overlay:hover {
+	display: flex;
 }
 
 .photo-overlay a:first-of-type {
@@ -1434,19 +1434,9 @@ fieldset.bluetooth label {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-	.goods-photo:not(:hover)+.photo-overlay:not(:hover) {
-		position: absolute;
-		clip: rect(1px 1px 1px 1px);
-		/* IE6, IE7 */
-		clip: rect(1px, 1px, 1px, 1px);
-		padding: 0;
-		border: 0;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-	}
+.photo-overlay:focus-within,
+.photo-overlay {
+	display: flex;
 }
 
 .goods-photo:not(:hover)+.photo-overlay:not(:hover):not(:focus-within) {
