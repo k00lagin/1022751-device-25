@@ -1139,6 +1139,8 @@ section.catalog {
 	margin-left: -1px;
 }
 
+.filters input[type=checkbox]:focus+label::before,
+.filters input[type=radio]:focus+label::before,
 .filters input[type=checkbox]+label:hover::before,
 .filters input[type=radio]+label:hover::before {
 	opacity: .6;
