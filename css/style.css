@@ -1064,6 +1064,7 @@ form.search button:active {
 .breadcrumbs li:not(:last-child)::after {
 	content: "";
 	display: inline-block;
+	vertical-align: baseline;
 	width: 4px;
 	height: 4px;
 	border-top: 1px solid;
@@ -1120,6 +1121,7 @@ section.catalog {
 .filters input[type=radio]+label::before {
 	content: "";
 	display: inline-block;
+	vertical-align: baseline;
 	background-position: 0;
 	background-repeat: no-repeat;
 }
@@ -1838,7 +1840,7 @@ fieldset.bluetooth label {
 }
 
 .page-footer .phone {
-	display: inline-block;
+	display: block;
 	-ms-grid-column: 4;
 	-ms-grid-row: 2;
 	grid-area: 2 / 4 / 3 / 5;
