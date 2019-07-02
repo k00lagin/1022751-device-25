@@ -104,6 +104,7 @@ body {
 	transition: .2s height;
 }
 
+.yellow-stripe-button:active:before,
 .yellow-stripe-button:hover:before,
 .yellow-stripe-button:focus:before {
 	height: 100%;
@@ -642,10 +643,6 @@ form.search button:active {
 .featured-categorie-img-link:active::before {
 	background-color: #f0c62d;
 	box-shadow: inset 160px 0 rgba(240, 198, 45, 0.5);
-}
-
-.featured-categorie-img-link:hover {
-	color: rgba(0, 0, 0, 0.5);
 }
 
 .featured-categorie-img-link:active {
