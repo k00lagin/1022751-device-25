@@ -138,7 +138,7 @@ body {
 }
 
 .logo-link[href]:active,
-.user-nav [href]:active,
+.page-header .user-nav [href]:active,
 .nav-link[href]:active,
 .catalog-link[href]:active {
 	opacity: .3;
