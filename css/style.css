@@ -1795,15 +1795,18 @@ fieldset.bluetooth label {
 }
 
 .page-footer .user-nav a {
+	opacity: 1;
 	color: rgba(255, 255, 255, 0.7);
 }
 
 .page-footer .user-nav a:hover {
 	color: white;
+	opacity: 1;
 }
 
 .page-footer .user-nav a:active {
 	color: rgba(255, 255, 255, 0.3);
+	opacity: 1;
 }
 
 .page-footer .user-nav a:hover::before {
