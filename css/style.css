@@ -718,23 +718,23 @@ form.search button:active {
 }
 
 .brand.spgadgets .logo-img {
-	background-image: url(../img/brands/spgadgets-translucent.png);
+	background-image: url(../img/brands/sp-gadgets-translucent.png);
 }
 
 .brand.spgadgets:hover>.logo-img,
 .brand.spgadgets:focus>.logo-img,
 .brand.spgadgets:active>.logo-img {
-	background-image: url(../img/brands/spgadgets.png);
+	background-image: url(../img/brands/sp-gadgets.png);
 }
 
 .brand.gopro .logo-img {
-	background-image: url(../img/brands/gopro-translucent.png);
+	background-image: url(../img/brands/go-pro-translucent.png);
 }
 
 .brand.gopro:hover>.logo-img,
 .brand.gopro:focus>.logo-img,
 .brand.gopro:active>.logo-img {
-	background-image: url(../img/brands/gopro.png);
+	background-image: url(../img/brands/go-pro.png);
 }
 
 .brand.vive .logo-img {
