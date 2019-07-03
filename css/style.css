@@ -964,6 +964,7 @@ form.search button:active {
 	margin: 0;
 	margin-bottom: 43px;
 	position: relative;
+	left: -2px;
 }
 
 .info-n-contacts h2::before {
@@ -974,11 +975,12 @@ form.search button:active {
 	height: 7px;
 	background-color: #000;
 	top: -53px;
+	left: 2px;
 }
 
 .info {
 	margin-right: 40px;
-	width: 558px;
+	width: 560px;
 }
 
 .info-n-contacts p {
@@ -990,11 +992,11 @@ form.search button:active {
 .info p {
 	font-size: 15px;
 	max-width: 462px;
-	letter-spacing: -.71px;
+	letter-spacing: -.18px;
 }
 
 .info p:first-of-type {
-	letter-spacing: -.45px;
+	letter-spacing: .1px;
 	margin-bottom: 30px;
 }
 
@@ -1018,6 +1020,10 @@ form.search button:active {
 	position: relative;
 }
 
+.transport-companies li:last-of-type {
+	letter-spacing: .1px;
+}
+
 .transport-companies li::before {
 	content: "";
 	position: absolute;
@@ -1032,12 +1038,15 @@ form.search button:active {
 }
 
 .contacts {
-	width: 562px;
+	width: 560px;
 }
 
 .contacts p {
 	letter-spacing: -.4px;
-	margin-bottom: 40px;
+	margin-bottom: 39px;
+	left: -2px;
+	top: -1px;
+	position: relative;
 }
 
 .contacts-map-link {
@@ -1337,11 +1346,11 @@ section.catalog {
 }
 
 fieldset.color {
-	margin-bottom: 52px;
+	margin-bottom: 43px;
 }
 
 fieldset.color legend {
-	margin-bottom: 26px;
+	margin-bottom: 18px;
 }
 
 fieldset.color label {
@@ -1349,7 +1358,7 @@ fieldset.color label {
 	line-height: 40px;
 	display: flex;
 	align-items: center;
-	letter-spacing: -1.3px;
+	letter-spacing: .14px;
 }
 
 fieldset.bluetooth {
@@ -1357,7 +1366,7 @@ fieldset.bluetooth {
 }
 
 fieldset.bluetooth legend {
-	margin-bottom: 25px;
+	margin-bottom: 17px;
 }
 
 fieldset.bluetooth label {
@@ -1365,7 +1374,7 @@ fieldset.bluetooth label {
 	line-height: 40px;
 	display: flex;
 	align-items: center;
-	letter-spacing: -1px;
+	letter-spacing: .14px;
 }
 
 .filters [type="submit"] {
@@ -1606,7 +1615,7 @@ fieldset.bluetooth label {
 	width: 759px;
 	height: 70px;
 	margin-left: auto;
-	margin-bottom: 77px;
+	margin-bottom: 76px;
 	margin-top: -11px;
 	background-color: #ebebeb;
 	font-family: Gilroy, Arial, sans-serif;
@@ -1631,7 +1640,7 @@ fieldset.bluetooth label {
 }
 
 .pagination>a:last-of-type {
-	padding-right: 30px;
+	padding-right: 27px;
 	margin-left: auto;
 	justify-content: flex-end;
 }
@@ -1650,7 +1659,8 @@ fieldset.bluetooth label {
 }
 
 .pagination li:first-of-type {
-	margin-left: 10px;
+	position: relative;
+	left: 3px;
 }
 
 .pagination li:not(:last-of-type) {
@@ -1692,8 +1702,8 @@ fieldset.bluetooth label {
 	display: grid;
 	-ms-grid-columns: 1fr 360px 440px 360px 1fr;
 	grid-template-columns: 1fr 360px 440px 360px 1fr;
-	-ms-grid-rows: 35px 122px 35px;
-	grid-template-rows: 35px 122px 35px;
+	-ms-grid-rows: 36px 123px 35px;
+	grid-template-rows: 36px 123px 35px;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	margin: auto;
@@ -1721,7 +1731,7 @@ fieldset.bluetooth label {
 	color: #fff;
 }
 
-.page-footer .site-nav .nav-link {
+.page-footer .nav-link {
 	font-family: Gilroy, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -1780,6 +1790,8 @@ fieldset.bluetooth label {
 	grid-area: 1 / 3 / 2 / 5;
 	justify-content: flex-end;
 	line-height: 36px;
+	top: -3px;
+	position: relative;
 }
 
 .page-footer .user-nav a {
