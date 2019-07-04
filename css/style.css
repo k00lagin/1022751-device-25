@@ -1157,21 +1157,25 @@ section.catalog {
 	opacity: .6;
 }
 
-.filters input[type=checkbox]+label::before {
+.filters input[type=checkbox]+label::before,
+.filters input[type=checkbox]:checked:not(:disabled)+label:active::before {
 	background-image: url(../img/utility-icons/checkbox-off.svg);
 	background-size: 23px 23px;
 }
 
-.filters input[type=checkbox]:checked+label::before {
+.filters input[type=checkbox]:checked+label::before,
+.filters input[type=checkbox]:not(:disabled)+label:active::before {
 	background-image: url(../img/utility-icons/checkbox-on.svg);
 	background-size: 27px 23px;
 }
 
-.filters input[type=radio]+label::before {
+.filters input[type=radio]+label::before,
+.filters input[type=radio]:checked:not(:disabled)+label:active::before {
 	background: url(../img/utility-icons/radio-off.svg);
 }
 
-.filters input[type=radio]:checked+label::before {
+.filters input[type=radio]:checked+label::before,
+.filters input[type=radio]:not(:disabled)+label:active::before {
 	background: url(../img/utility-icons/radio-on.svg);
 }
 
